@@ -1,0 +1,148 @@
+* {
+    font-family: "Slackey", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100%;
+}
+.titulo1{
+    font-family: "Slackey", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 180%;
+}
+
+.numero {
+    padding: 10px 20px;
+    border: 2px solid #894BEB;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    background-color: #FAEABE;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+.Tamaño1.reiniciarJuego {
+    text-align: center;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+header {
+    text-align: center;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    width: 100%;
+    /* Ancho completo */
+    margin: 0 auto;
+    /* Centrado horizontalmente */
+    display: flex;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: #FAEABE;
+}
+
+button {
+    border-style: none;
+    padding: 1em;
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
+    background-image: linear-gradient(to right, #894BEB, #C360EB);
+    /* Dirección y colores del degradado */
+    padding: 10px 20px;
+    /* Ajustar el espacio interno */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar el ratón */
+    border-radius: 5px;
+    /* Redondear los bordes */
+}
+
+.grid {
+    text-align: center;
+    /* Centra horizontalmente */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px; /* Espacio entre celdas */
+    background-color:#FAEABE;
+    margin: 1px auto; /* Centra horizontal y verticalmente */
+    border: 1px solid black;
+    box-sizing: border-box; /* Agrega esta línea */
+}
+
+.celda {
+    border: 1px solid black;
+    /* Añadir borde blanco a las celdas */
+    width: 40px;
+    /* Tamaño de las celdas */
+    height: 40px;
+    /* Tamaño de las celdas */
+    background-color: #FAEABE;
+    color: black;
+    display: flex;
+    box-sizing: border-box;
+    /* Espacio entre celdas */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1px; /* Eliminar todos los márgenes */
+    margin-bottom: 1px; 
+    margin-left: 1px; 
+    margin-right: 1px; 
+}
+
+.celda.clicked {
+    background-color: white;
+}
+
+.celda.clicked.bomba {
+    background-image: url('Bomba.jpeg');
+    /* Ruta de la imagen */
+    background-size: cover;
+    /* Ajusta la imagen para que cubra completamente la celda */
+    background-position: center;
+    /* Centra la imagen dentro de la celda */
+}
+
+#mensaje {
+    width: 20%;
+    height: 6%;
+    text-align: center;
+    font-size: 210%;
+    display: none;
+    /* Ocultar el mensaje inicialmente */
+    position: fixed;
+    /* Posición fija en la pantalla */
+    top: 15%;
+    /* Alineación vertical al centro */
+    left: 20%;
+    /* Alineación horizontal al centro */
+    transform: translate(-50%, -50%);
+    /* Centrar el elemento */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fondo semi-transparente */
+    padding: 20px;
+    /* Espacio interior */
+    border: 2px solid #894BEB;
+    /* Borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+.puntuacion {
+    margin-left: 30%;
+    color: black;
+}
